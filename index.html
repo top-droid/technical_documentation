@@ -1,79 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS Documentation</title>
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- 8 -->
     <nav id="navbar">
-      <!-- 9 -->
-      <header>CSS Documentation</header>
-      <!-- 10 not done  -->
-      <!-- 11 -->
-      <!-- 12 not done -->
-      <ul>
-        <li><a class="nav-link" href="#selectors">Selectors</a></li>
-        <li><a class="nav-link" href="#box_model">Box Model</a></li>
-        <li><a class="nav-link" href="#flexbox">Flexbox</a></li>
-        <li><a class="nav-link" href="#text_styling">Text Styling</a></li>
-        <li><a class="nav-link" href="#positioning">Positioning</a></li>
-      </ul>
+        <!-- 9 -->
+        <header>CSS Documentation</header>
+        <!-- 10 not done  -->
+        <!-- 11 -->
+        <!-- 12 not done -->
+        <ul>
+            <li><a class="nav-link" href="#selectors">Selectors</a></li>
+            <li><a class="nav-link" href="#box_model">Box Model</a></li>
+            <li><a class="nav-link" href="#flexbox">Flexbox</a></li>
+            <li><a class="nav-link" href="#text_styling">Text Styling</a></li>
+            <li><a class="nav-link" href="#positioning">Positioning</a></li>
+        </ul>
     </nav>
     <!-- 1 -->
     <main id="main-doc">
 
 
-      <!-- 2 -->
-      <section class="main-section" id="selectors">
-        <!-- 3 -->
-        <!-- 4 -->
-        <header>Selectors</header>
-        <!-- 5 -->
-        <p></p>
-        <p></p>
-        <!-- 6 -->
-        <code></code>
-        <!-- 7 -->
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
+        <!-- 2 -->
+        <section class="main-section" id="selectors">
+            <!-- 3 -->
+            <!-- 4 -->
+            <header>Selectors</header>
+            <!-- 5 -->
+            <p>
+                CSS selectors are the foundation of styling elements in a webpage. They are patterns used to target HTML
+                elements for applying specific styles. Selectors can range from simple element names to more complex
+                patterns like class names, IDs, or even attribute-based selections. By utilizing these selectors,
+                developers can precisely define which HTML elements should be styled in specific ways, making the
+                website both functional and visually appealing.
+            </p>
+            <p>
+                There are several types of CSS selectors, each serving a distinct purpose. The most basic selector is
+                the
+                type selector, which targets elements by their tag name <span class="bold">(e.g., p, div, h1)</span>.
+                Class selectors <span class="bold">(.className)</span> allow styling multiple elements with the same
+                class, while ID selectors <span class="bold">(#idName)</span> are used for unique elements. Pseudo-class
+                selectors like <span class="bold">:hover</span> can style elements based on user interaction, and
+                attribute selectors target elements with specific attributes. Together, these selectors give developers
+                granular control over how their website looks and behaves.
+            </p>
+            <!-- 6 -->
 
-      <section class="main-section" id="box_model">
-        <header>Box Model</header>
-        <p></p>
-        <p></p>
-        <code></code>
-      </section>
+            <code>
+                &lt;style&gt;
+                  p {
+                    color: blue;
+                  }
+                  .highlight {
+                    font-weight: bold;
+                  }
+                  #intro {
+                    font-size: 20px;
+                  }
+                &lt;/style&gt;
+                
+                &lt;p id="intro"&gt;This is an introductory paragraph.&lt;/p&gt;
+                &lt;p class="highlight"&gt;This is highlighted text.&lt;/p&gt;
+                &lt;p&gt;This text is blue but not highlighted.&lt;/p&gt;
+            </code>
 
-      <section class="main-section" id="flexbox">
-        <header>Flexbox</header>
-        <p></p>
-        <p></p>
-        <code></code>
-      </section>
 
-      <section class="main-section" id="text_styling">
-        <header>Text Styling</header>
-        <p></p>
-        <p></p>
-        <code></code>
-      </section>
+            <!-- 7 -->
+            <h3>A few Types of CSS Selectors:</h3>
+            <ul>
+                <li>Type Selector</li>
+                <li>Class Selector</li>
+                <li>ID Selector</li>
+                <li>Attribute Selector</li>
+                <li>Pseudo-class Selector</li>
+            </ul>
+        </section>
 
-      <section class="main-section" id="positioning">
-        <header>Positioning</header>
-        <p></p>
-        <p></p>
-        <code></code>
-      </section>
+        <section class="main-section" id="box_model">
+            <header>Box Model</header>
+            <p>
+                The CSS Box Model is a fundamental concept that defines how the elements on a webpage are structured and
+                spaced. Every HTML element is considered as a rectangular box, consisting of four areas: content,
+                padding, border, and margin. The content area is where the actual content resides, followed by padding,
+                which creates space around the content. The border surrounds the padding, and the outermost area is the
+                margin, which provides space between the element and its neighboring elements.
+            </p>
+            <p>
+                Understanding the box model is crucial for controlling layout and spacing. By adjusting these areas, you
+                can control how much space an element occupies and how it interacts with surrounding elements. The box
+                model properties allow you to fine-tune the appearance and responsiveness of your design, especially
+                when combined with layout techniques like Flexbox or Grid.
+            </p>
+            <code>
+            &lt;div style="width: 200px; padding: 10px; border: 5px solid black; margin: 20px;"&gt;
+  This box has padding, a border, and margin.
+&lt;/div&gt;
+
+        </code>
+        </section>
+
+        <section class="main-section" id="flexbox">
+            <header>Flexbox</header>
+            <p>
+                CSS Flexbox (Flexible Box Layout) is a powerful layout module that allows you to align and distribute
+                space among items within a container efficiently. Flexbox is particularly helpful for creating
+                responsive layouts, as it enables easy alignment of elements in various directions and sizes without
+                needing float or positioning hacks. The key components of Flexbox are the container (with <span
+                    class="bold">display: flex</span>) and its child elements, called flex items.
+            </p>
+            <p>
+                With Flexbox, you can control the direction, alignment, spacing, and wrapping of flex items. It
+                simplifies the process of building dynamic layouts that adapt to different screen sizes and content,
+                making it an essential tool for modern web design.
+            </p>
+            <code>
+            &lt;div style="display: flex; justify-content: space-between;"&gt;
+            &lt;div&gt;Item 1&lt;/div&gt;
+            &lt;div&gt;Item 2&lt;/div&gt;
+            &lt;div&gt;Item 3&lt;/div&gt;
+          &lt;/div&gt;
+            
+        </code>
+        </section>
+
+        <section class="main-section" id="text_styling">
+            <header>Text Styling</header>
+            <p>
+                Text styling in CSS involves controlling the appearance of text on a webpage. You can modify the font
+                size, weight, style, color, alignment, and more using various CSS properties. Common properties include
+                <span class="bold">font-size, color, font-family, text-align,</span> and <span
+                    class="bold">text-decoration</span>. These properties allow you to create visually appealing and
+                readable content, which is critical for enhancing user experience.
+            </p>
+            <p>
+                For instance, <span class="bold">font-weight</span> can make text bold, while <span
+                    class="bold">text-decoration</span> can be used to underline or strike through text. By combining
+                these properties, you can set different typographic styles that match the theme and purpose of your
+                website.
+            </p>
+            <code>
+            &lt;p style="font-size: 18px; color: #333; text-align: center; font-family: Arial, sans-serif;"&gt;
+  This is a styled paragraph of text.
+&lt;/p&gt;
+
+        </code>
+        </section>
+
+        <section class="main-section" id="positioning">
+            <header>Positioning</header>
+            <p>
+                CSS positioning allows you to control the exact placement of an element on the webpage. There are
+                several types of positioning: <span class="bold">static, relative, absolute, fixed,</span> and <span class="bold">sticky</span>. Each defines how an element
+                is positioned in relation to its normal flow or other elements. For example, <span class="bold">relative</span> positions an
+                element relative to its normal position, while <span class="bold">absolute</span> positions it relative to its nearest positioned
+                ancestor.
+            </p>
+            <p>
+                Positioning is key to creating complex layouts, overlays, or sticky headers. When used effectively, it
+                gives you precise control over the layout and design of your web pages.
+            </p>
+            <code>
+                &lt;div style="position: relative; top: 20px; left: 30px;"&gt;
+  This element is positioned 20px from the top and 30px from the left of its normal position.
+&lt;/div&gt;
+
+            </code>
+        </section>
     </main>
-  </body>
+</body>
+
 </html>
