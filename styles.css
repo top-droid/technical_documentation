@@ -100,7 +100,7 @@ code {
 img {
     display: block;
     height: 40vh;
-    width: 20vw;
+    min-width: 20vw;
     margin: 6rem auto 10rem;
     border-radius: 0.2rem;
 }
@@ -138,4 +138,62 @@ code {
 }
 
 
+/* Existing styles... */
 
+/* Existing styles... */
+
+/* Add this media query at the end of your existing CSS */
+@media (max-width: 800px) {
+    body {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    #navbar {
+        position: relative; 
+        height: auto; /* Allow it to take height based on content */
+        width: 100%; /* Full width */
+        
+    }
+
+    nav ul {
+        flex-direction: row; /* Change to row layout */
+        justify-content: space-around; /* Space out items evenly */
+        padding: 0; /* Remove padding */
+    }
+
+    nav ul li {
+        border: none; /* Remove borders */
+        padding: 0.5rem 1rem; /* Add padding for touch targets */
+    }
+
+    #main-doc {
+        margin-left: 0; /* Remove left margin */
+        padding: 1rem; /* Add padding for better appearance */
+    }
+
+    /* start here */
+
+    #navbar header {
+        text-align: center;
+    }
+
+    #navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar ul li  {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+       border-bottom: 0.2rem solid black;
+       width: 100%;
+       text-align: center;
+    }
+
+    nav ul li:first-of-type {
+        border-top: 0.2rem solid black;
+    }
+}
